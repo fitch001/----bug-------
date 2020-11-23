@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼图游戏</title>
+    <link type="text/css" rel="stylesheet" href="./puzzle.css">
+    <script type="text/javascript" src="./puzzle.js"></script>
+    <script src="./jquery-3.6.1.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="game">
+            <div  id="g1" onclick="move(1)">1</div>
+            <div  id="g2" onclick="move(2)">2</div>
+            <div  id="g3" onclick="move(3)">3</div>
+            <div  id="g4" onclick="move(4)">4</div>
+            <div  id="g5" onclick="move(5)">5</div>
+            <div  id="g6" onclick="move(6)">6</div>
+            <div  id="g7" onclick="move(7)">7</div>
+            <div  id="g8" onclick="move(8)">8</div>
+        </div>
+        <div class="set">
+            <div id="time">
+                <span id = "timetext">用时</span><br/>
+                <span id = 'timer'></span>
+            </div>
+            <div id="stop" onclick="start()">开始游戏</div>
+            <div id="replay" onclick="reset()">重新开始</div>
+        </div>
+    </div>
+</body>
+
+</html>
