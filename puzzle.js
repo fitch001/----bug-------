@@ -152,17 +152,17 @@ function random_d() {
         if (d[i] != 0) {
             // document.getElementById("g" + d[i]).style.left = d_positonXY[to][0] + 'px';
             // document.getElementById("g" + d[i]).style.top = d_positonXY[to][1] + 'px';
-            $('#g' + d[i]).css({
+            $('#g' + d[i]).animate({
                 "left": d_positonXY[to][0] + 'px',
                 "top": d_positonXY[to][1] + 'px'
-            });
+            },500);
         }
         //将随机出来的div位置设置为当前的位置
         if (d[to] != 0) {
-            $('#g' + d[to]).css({
+            $('#g' + d[to]).animate({
                 "left": d_positonXY[i][0] + 'px',
                 "top": d_positonXY[i][1] + 'px'
-            })
+            },500)
             // document.getElementById("g" + d[to]).style.left = d_positonXY[i][0] + 'px';
             // document.getElementById("g" + d[to]).style.top = d_positonXY[i][1] + 'px';
         }
